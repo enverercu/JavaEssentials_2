@@ -1,0 +1,30 @@
+Can you explain static Initializers in Java?
+
+- A static initializer block resembles a method with no name, no arguments, and no return type.
+- There is no need to refer to it from outside the class definition.
+
+- Syntax :
+
+static
+{
+   //CODE
+}
+
+- The code in a static initializer block is executed by the virtual machine when the class is loaded.
+- Because it is executed automatically when the class is loaded, parameters don't make any sense, 
+so a static initializer block doesn't have an argument list.
+
+
+The static initializer is a static {} block of code inside java class, 
+and run only one time before the constructor or main method is called. 
+If you had to perform a complicated calculation to determine the value of x — or 
+if its value comes from a database — a static initializer could be very useful.
+
+class StaticInit {
+    public static int x;
+    static {
+        x = 32;
+    }
+    // other class members such as constructors and
+    // methods go here...
+}

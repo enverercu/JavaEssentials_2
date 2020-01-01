@@ -1,0 +1,8 @@
+Sýð
+Shallow copy : In this, object is copied without its contained objects. 
+Shallow clone only copies the top level structure of the object not the lower levels. 
+It is an exact bit copy of all the attributes.
+
+Deep copy : In this object is copied along with the objects it refers to. 
+Deep clone copies all the levels of the object from top to the bottom recursively.
+

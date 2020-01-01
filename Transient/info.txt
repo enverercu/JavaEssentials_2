@@ -1,0 +1,2 @@
+Static data members and transient data members are not saved via Serialization process.
+So, if you don’t want to save value of a non-static data member then make it transient.

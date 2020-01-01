@@ -1,0 +1,31 @@
+A reference variable of the super class can refer to a sub class object
+Doctor obj = new Surgeon();
+obj.treatPatient();
+
+Here the reference variable "obj" is of the parent class, 
+but the object(surgeon obj) it is pointing to is of the child class
+
+obj.treatPatient() will execute treatPatient() method of the sub-class - Surgeon
+
+If a base class reference is used to call a method, 
+the method to be invoked is decided by the JVM, 
+depending on the object the reference is pointing to
+
+For example, even though obj is a reference to Doctor, 
+it calls the method of Surgeon, as it points to a Surgeon object
+
+This is decided during run-time and hence termed dynamic or run-time polymorphism
+
+
+Super Keyword
+What if the treatPatient method in the Surgeon class wants to execute the functionality 
+defined in Doctor class and then perform its own specific functionality?
+
+In this case, keyword "super" can be used to access methods of the parent class from the child class.
+
+treatPatient(){
+   super.treatPatient();
+     //add code specific to Surgeon
+}
+
+The keyword super can be used to access any data member or methods of the super class in the sub class.

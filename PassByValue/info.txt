@@ -1,0 +1,15 @@
+Java is always pass-by-value. 
+Unfortunately, when we pass the value of an object, 
+we are passing the reference to it. 
+There is no such thing as "pass-by-reference" in Java. This is confusing to beginners.
+
+The key to understanding this is that something like
+
+Dog myDog;
+is not a Dog; it's actually a pointer to a Dog.
+
+So when you have
+
+Dog myDog = new Dog("Rover");
+foo(myDog);
+you're essentially passing the address of the created Dog object to the foo method

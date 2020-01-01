@@ -1,0 +1,3 @@
+Such behavior is obvious as static variables are shared among all the objects of a class; 
+creating a new object would change the same static 
+variable which is not allowed if the static variable is final.

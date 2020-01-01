@@ -1,0 +1,6 @@
+Java Message Service (JMS) is used for creating the communication interface 
+between two clients by using the message passing services.
+
+This helps the application to interact with other components 
+irrespective of components location 
+whether they rely on "same system" or "connect to the main system through LAN or internet".

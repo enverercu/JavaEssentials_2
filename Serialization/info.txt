@@ -1,0 +1,35 @@
+Explain the usage of serialization.
+
+- Objects are serialized when need to be sent over network.
+- They are serialized when the state of an object is to be saved.
+
+What Is the Purpose of the Serializable Interface?
+
+Serialization is a mechanism of converting the state of an object into a byte stream.
+
+This mechanism is used to persist the object.
+
+Object --> ByteStream --> File --> ByteStream --> Object
+						 Memory
+						Database
+						
+						
+To make a Java object serializable we implement the java.io.Serializable interface.
+
+The ObjectOutputStream class contains writeObject() method for serializing an Object.
+
+The ObjectInputStream class contains readObject() method for deserializing an object.
+
+Only the objects of those classes can be serialized which are implementing java.io.Serializable interface.
+
+
+************
+
+Points to remember
+1. If a parent class has implemented Serializable interface then child class doesn’t need to implement it.
+2. Only non-static data(instance) members are saved via Serialization process.
+3. Static data members and transient data members are not saved via Serialization process.So, if you don’t want to save value of a non-static data member then make it transient.
+4. Constructor of object is never called when an object is deserialized.
+5. Associated objects must be implementing Serializable interface.
+
+

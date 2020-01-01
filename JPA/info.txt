@@ -1,0 +1,8 @@
+The Java Persistence API is enabling us to create the persistence layer for desktop and web applications.
+
+Java Persistence deals in following:
+
+1. Java Persistence API
+2. Query Language
+3. Java Persistence Criteria API
+4. Object Mapping Metadata

@@ -1,0 +1,7 @@
+What is difference between Java and JavaScript?
+
+Java is an Object Oriented Programming Language and capable of running on 
+multiple operating systems with the help of interpreter 
+whereas Java Script is the object oriented scripting language and it is embedded in HTML and runs directly on the browser.
+
+Java Script code is not compiled they are directly run on the browser.

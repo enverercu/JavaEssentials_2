@@ -1,0 +1,14 @@
+ What Are the Methods of the Object Class and What Do They Do?
+ 
+ It's important to know what methods the Object class contains and how they work. 
+ It's also very helpful when we want to override those methods:
+ 
+clone() – returns a copy of this object
+equals() – returns true when this object is equal to the object passed as a parameter
+finalize() – the garbage collector calls this method while it's cleaning the memory
+getClass() – returns the runtime class of this object
+hashCode() – returns a hash code of this object. We should be aware that it should be consistent with the equals() method
+notify() – sends a notification to a single thread waiting for the object's monitor
+notifyAll() – sends a notification to all threads waiting for the object's monitor
+toString() – returns a string representation of this object
+wait() – there are three overloaded versions of this method. It forces the current thread to wait the specified amount of time until another thread calls notify() or notifyAll() on this object.
